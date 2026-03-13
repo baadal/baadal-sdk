@@ -1,0 +1,32 @@
+{
+  "name": "baadal-sdk",
+  "version": "0.0.0",
+  "description": "baadal-sdk monorepo",
+  "author": "abraj",
+  "license": "MIT",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "tsc": "pnpm -r run tsc",
+    "build": "pnpm -r run build",
+    "build:server": "pnpm -r run build:server",
+    "pack": "pnpm run build && rm -f artifacts/*.tgz && pnpm -r run pack",
+    "publish:test": "pnpm -r publish --dry-run",
+    "publish": "pnpm -r publish",
+    "clean": "rm -rf node_modules tsconfig.tsbuildinfo && pnpm -r run clean"
+  },
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baadal/baadal-sdk.git"
+  },
+  "keywords": [
+    "aws",
+    "s3"
+  ],
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "@baadal-sdk/dapi",
+  "version": "0.0.0",
+  "description": "Dead-simple API wrappers",
+  "author": "abraj",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "tsc": "tsc -b",
+    "build": "tsup --dts",
+    "build:server": "tsup",
+    "pack": "pnpm pack --pack-destination ../../artifacts",
+    "prepublishOnly": "pnpm build",
+    "clean": "rm -rf node_modules dist tsconfig.tsbuildinfo"
+  },
+  "type": "commonjs",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baadal/baadal-sdk.git"
+  },
+  "keywords": [
+    "aws",
+    "s3"
+  ],
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "splitting": false,
+    "sourcemap": true,
+    "clean": true
+  }
+}

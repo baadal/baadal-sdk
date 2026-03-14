@@ -20,12 +20,28 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/baadal/baadal-sdk.git"
+    "url": "git+https://github.com/baadal/baadal-sdk.git",
+    "directory": "packages/dapi"
   },
+  "homepage": "https://github.com/baadal/baadal-sdk/tree/main/packages/dapi#readme",
   "keywords": [
     "aws",
-    "s3"
+    "s3",
+    "dynamodb",
+    "fs",
+    "github"
   ],
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "catalog:",
+    "@aws-sdk/client-s3": "catalog:",
+    "@aws-sdk/lib-dynamodb": "catalog:",
+    "js-base64": "catalog:",
+    "mime-types": "catalog:",
+    "short-uuid": "catalog:"
+  },
+  "devDependencies": {
+    "@types/mime-types": "catalog:"
+  },
   "tsup": {
     "entry": [
       "src/index.ts"

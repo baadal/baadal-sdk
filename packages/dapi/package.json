@@ -12,6 +12,7 @@
     "build:server": "tsup",
     "pack": "pnpm pack --pack-destination ../../artifacts",
     "prepublishOnly": "pnpm build",
+    "demo": "tsx demo/fs-demo.ts",
     "clean": "rm -rf node_modules dist tsconfig.tsbuildinfo"
   },
   "type": "commonjs",

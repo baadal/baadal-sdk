@@ -1,5 +1,6 @@
 node_modules/
 artifacts/
+packages/dapi/demo/sandbox/
 
 .DS_Store
 tsconfig.tsbuildinfo

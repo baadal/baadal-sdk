@@ -1,5 +1,6 @@
+import * as fs from './fs';
 import * as aws from './aws';
 import * as utils from './utils';
 
-export { aws, utils }; // named exports
-export default { aws, utils }; // default export
+export { fs, aws, utils }; // named exports
+export default { fs, aws, utils }; // default export

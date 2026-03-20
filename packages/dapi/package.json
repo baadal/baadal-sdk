@@ -38,6 +38,7 @@
     "@aws-sdk/lib-dynamodb": "catalog:",
     "js-base64": "catalog:",
     "mime-types": "catalog:",
+    "octokit": "catalog:",
     "short-uuid": "catalog:"
   },
   "devDependencies": {

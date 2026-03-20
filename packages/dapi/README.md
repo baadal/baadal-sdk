@@ -24,6 +24,16 @@ await aws.s3.putObject(
 )
 ```
 
+## GitHub
+
+```js
+import { gh } from '@baadal-sdk/dapi'
+
+const github = gh.getInstance(process.env.GITHUB_TOKEN!, 'org-name')
+const { data } = await github.getContent('repo-name', 'packages/client/CHANGELOG.md')
+console.log(data.content)
+```
+
 ## fs (file system)
 
 ```js
